@@ -10,6 +10,7 @@ import AddEditBoardModal from "../modals/AddEditBoardModal";
 import { useDispatch, useSelector } from "react-redux";
 import DeleteModal from "../modals/DeleteModal";
 import boardsSlice from "../redux/boardsSlice";
+import jake from '../assets/jake.png'
 
 function Header({ setIsBoardModalOpen, isBoardModalOpen }) {
   const [openDropdown, setOpenDropdown] = useState(false);
@@ -53,9 +54,9 @@ function Header({ setIsBoardModalOpen, isBoardModalOpen }) {
       <header className=" flex justify-between dark:text-white items-center  ">
         {/* Left Side  */}
         <div className=" flex items-center space-x-2  md:space-x-4">
-          <img src={Logo} alt=" Logo " className=" h-6 w-6" />
-          <h3 className=" md:text-4xl  hidden md:inline-block font-bold  font-sans">
-            kanban
+          <img src={jake} alt=" Logo " className=" h-[42px] w-[56px]" />
+          <h3 className=" md:text-4xl  hidden md:inline-block font-light  font-sans">
+            Mobile Web Ghana
           </h3>
           <div className=" flex items-center ">
             <h3 className=" truncate max-w-[200px] md:text-2xl text-xl font-bold md:ml-20 font-sans  ">
